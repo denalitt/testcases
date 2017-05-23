@@ -1,0 +1,7 @@
+test_ospf_neighbor:
+  - command: show ospf neighbor
+  - iterate:
+      xpath: .
+      id: ospf-neighbor/neighbor-address
+      tests:
+        - no-diff: ospf-neighbor/ospf-neighbor-state
