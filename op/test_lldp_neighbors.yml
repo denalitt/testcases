@@ -1,0 +1,14 @@
+---
+
+test_lldp_neighbors:
+  - command: show lldp neighbors
+
+  - iterate:
+      xpath: '//lldp-neighbor-information'
+      id: './lldp-local-port-id'
+      tests:
+        - contains: lldp-remote-system-name, dc
+          err: "Test Fail!"
+          info: "Test Pass!"
+
+

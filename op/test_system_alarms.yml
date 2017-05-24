@@ -1,0 +1,13 @@
+---
+
+test_system_alarms:
+  - command: show system alarms
+
+  - item:
+      xpath: /alarm-information/alarm-summary
+      tests:
+        - exists: no-active-alarms
+          err: "Test Fail!"
+          info: "Test Pass!"
+
+

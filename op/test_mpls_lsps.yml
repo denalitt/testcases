@@ -1,0 +1,14 @@
+---
+
+test_mpls_lsp:
+  - command: show mpls lsp
+
+  - item:
+      xpath: //rsvp-session-data
+
+      tests:
+        - is-gt: up-count, 1 
+          err: "Test Fail!"
+          info: "Test Pass!"
+
+
