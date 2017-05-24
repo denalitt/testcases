@@ -1,0 +1,15 @@
+---
+
+
+test_config_SSH: 
+  - rpc: get-config 
+
+  - item: 
+      xpath: //configuration 
+      tests: 
+        - exists: //system/services/ssh 
+          info: "SSH OK" 
+          err: "SSH NG" 
+
+
+

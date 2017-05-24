@@ -1,0 +1,12 @@
+---
+
+test_config_ntp:
+  - rpc: get-config
+
+  - item:
+      xpath: //configuration/system/ntp
+      tests:
+        - contains: boot-server, 12.13.14.200
+          err: "Test Fail!"
+          info: "Test Pass!"
+

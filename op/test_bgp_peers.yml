@@ -1,0 +1,21 @@
+---
+
+test_bgp_peers:
+  # Works.
+  - command: show bgp summary
+
+  - item:
+      xpath: //bgp-information
+      tests:
+        - is-equal: down-peer-count, 0
+          err: "Test Fail!"
+          info: "Test Pass!"
+
+  - item:
+      xpath: //bgp-information
+      tests:
+        - is-gt: peer-count, 1
+          err: "Test Fail!"
+          info: "Test Pass!"
+
+
