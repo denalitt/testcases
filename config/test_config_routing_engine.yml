@@ -1,0 +1,15 @@
+---
+
+
+test_config_Routing_Engine: 
+  - rpc: get-environment-re-information 
+
+  - item: 
+      xpath: //environment-component-item
+      tests: 
+        - contains: //state, Online Master
+          info: "Test Pass" 
+          err: "Test Fail" 
+
+
+

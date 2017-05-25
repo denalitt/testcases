@@ -1,0 +1,61 @@
+---
+
+hosts:
+  - device: 12.13.14.1
+    username: denali
+    passwd: denali11
+    port: 22
+    
+  - device: 12.13.14.2
+    username: denali
+    passwd: denali11
+    port: 22
+    
+  - device: 12.13.14.3
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.4
+    username: denali
+    passwd: denali11
+    port: 22
+    
+  - device: 12.13.14.5
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.6
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.7
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.8
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.9
+    username: denali
+    passwd: denali11
+    port: 22
+
+  - device: 12.13.14.10
+    username: denali
+    passwd: denali11
+    port: 22
+    
+tests:
+  - test_routes.yml
+
+
+
+
+
+

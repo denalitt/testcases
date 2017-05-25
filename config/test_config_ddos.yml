@@ -1,0 +1,17 @@
+---
+
+
+test_DDOS: 
+  - rpc: get-ddos-statistics-information 
+
+  - item: 
+      xpath: //ddos-statistics-information
+      tests: 
+        - contains: //ddos-policing-re-enabled, Yes
+        - contains: //ddos-policing-fpc-enabled, Yes
+        - contains: //detection-mode, Automatic
+          info: "Test Pass" 
+          err: "Test Fail" 
+
+
+

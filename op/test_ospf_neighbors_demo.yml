@@ -1,0 +1,15 @@
+---
+
+test_ospf_nei:
+  - rpc: get-ospf-overview-information
+
+  - iterate:
+      xpath: //ospf-overview/ospf-area-overview
+      tests:
+        - in-range: //ospf-nbr-up-count, 2, 20
+          err: "Test Fail!"
+          info: "Test Pass!"
+
+        
+
+

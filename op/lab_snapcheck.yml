@@ -1,0 +1,72 @@
+---
+
+hosts:
+  - device: 12.13.14.1
+    username: denali
+    passwd: denali11
+    port: 22
+    
+  - device: 12.13.14.2
+    username: denali
+    passwd: denali11
+    port: 22
+    
+  - device: 12.13.14.3
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.4
+    username: denali
+    passwd: denali11
+    port: 22
+    
+  - device: 12.13.14.5
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.6
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.7
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.8
+    username: denali
+    passwd: denali11
+    port: 22
+  
+  - device: 12.13.14.9
+    username: denali
+    passwd: denali11
+    port: 22
+
+  - device: 12.13.14.10
+    username: denali
+    passwd: denali11
+    port: 22
+    
+tests:
+  - test_bgp_peers.yml
+  - test_config_ddos.yml
+  - test_config_ntp.yml
+  - test_config_ospf.yml
+  - test_config_routing_engine.yml
+  - test_config_ssh.yml
+  - test_interfaces.yml
+  - test_lldp_neighbors.yml
+  - test_mpls_lsps.yml
+  - test_ospf_neighbors.yml
+  - test_pfe_errors.yml
+  - test_system_alarms.yml
+
+
+
+
+
+

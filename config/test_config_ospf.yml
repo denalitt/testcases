@@ -1,0 +1,17 @@
+---
+
+
+test_config_OSPF: 
+  - rpc: get-config 
+
+  - item: 
+      xpath: //configuration
+      tests: 
+        - exists: //protocols/ospf/area/name
+        - contains: //protocols/ospf/area/name, 0.0.0.0
+        - contains: //protocols/ospf/area/interface/interface-type,p2p        
+          info: "Test Pass" 
+          err: "Test Fail" 
+
+
+

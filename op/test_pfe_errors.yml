@@ -1,0 +1,12 @@
+---
+
+
+test_pfe_errors:
+  - command: show pfe statistics error 
+
+  - iterate:
+      xpath: '//output'
+      tests:
+        - contains: //output,*****  No errors on this PFE  *****
+          err: "Test Fail!"
+          info: "Test Pass!"
