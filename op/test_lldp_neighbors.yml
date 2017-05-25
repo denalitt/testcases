@@ -5,7 +5,7 @@ test_lldp_neighbors:
 
   - iterate:
       xpath: '//lldp-neighbor-information'
-      id: './lldp-local-port-id'
+      id: 'lldp-local-port-id'
       tests:
         - contains: lldp-remote-system-name, dc
           err: "Test Fail!"

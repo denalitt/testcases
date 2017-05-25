@@ -5,7 +5,7 @@ test_ospf_nei:
 
   - iterate:
       xpath: '//ospf-neighbor'
-      id: './neighbor-address'
+      id: 'neighbor-address'
       tests:
         - is-equal: ospf-neighbor-state, Full
           err: "Test Fail!"
