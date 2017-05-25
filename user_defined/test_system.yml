@@ -1,0 +1,19 @@
+tests_include:
+  - test_config
+
+test_config:
+  - rpc: get-config
+  - item:
+      xpath: //configuration
+      tests:
+        - exists: //system/services/ssh
+          info: "SSH OK"
+          err: "SSH NG"
+
+        - exists: //system/services/netconf/ssh
+          info: "NETCONF OK"
+          err: "NETCONF NG"
+
+        - exists: //system/ntp/server[normalize-space(name) = "66.129.255.61" ]
+          info: "NTP OK"
+          err: "NTP is not properly configured with ntp.juniper.net on {{ pre['system/ntp/server/name'] }}"
