@@ -5,7 +5,7 @@ test_routes:
 
   - item:
       xpath: //route-table[table-name='inet.0']
-      id: ./table-name
+      id: table-name
 
       tests:
         - is-gt: total-route-count, 20
@@ -14,7 +14,7 @@ test_routes:
 
   - item:
       xpath: //route-table[table-name='inet.3']
-      id: ./table-name
+      id: table-name
 
       tests:
         - is-gt: total-route-count, 20
@@ -23,7 +23,7 @@ test_routes:
 
   - item:
       xpath: //route-table[table-name='mpls.0']
-      id: ./table-name
+      id: table-name
 
       tests:
         - is-gt: total-route-count, 20
